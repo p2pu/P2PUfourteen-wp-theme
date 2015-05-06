@@ -131,10 +131,3 @@
 	</div>
 	<!-- /.container-fluid -->
 </nav>
-<div class="search-bar">
-    <div class="container">
-        <div class="col-md-8 col-md-offset-2">
-            <?php get_search_form(); ?>
-        </div>
-    </div>
-</div>

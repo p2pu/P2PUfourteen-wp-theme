@@ -102,6 +102,16 @@ function bones_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 
+    register_sidebar(array(
+        'id' => 'sidebar2',
+        'name' => __( 'Sidebar 2', 'bonestheme' ),
+        'description' => __( 'The second (secondary) sidebar.', 'bonestheme' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="widgettitle">',
+        'after_title' => '</h4>',
+    ));
+
 	/*
 	to add more sidebars or widgetized areas, just copy
 	and edit the above sidebar code. In order to call
@@ -174,8 +184,8 @@ function bones_comments( $comment, $args, $depth ) {
 // Search Form
 function bones_wpsearch($form) {
 	$form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . esc_attr__( 'Search the Site...', 'bonestheme' ) . '" />
-	<button type="submit" id="searchsubmit" value="' . esc_attr__( 'Search' ) .'" /><i class="icon-search"></i></button>
+	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . esc_attr__( 'Search the Blog...', 'bonestheme' ) . '" />
+	<button type="submit" id="searchsubmit" value="' . esc_attr__( 'Search' ) .'" /><i class="fa fa-search"></i></button>
 	</form>';
 	return $form;
 } // don't remove this bracket!

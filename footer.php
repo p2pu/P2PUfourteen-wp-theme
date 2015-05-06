@@ -29,7 +29,7 @@
 					</div>
 
 					<div class="col-md-4 col-md-offset-1">
-						<h4>Meta</h4>
+                        <?php get_sidebar('sidebar2'); ?>
 						<ul class="footer-links">
 							<li>
 								<i class="fa fa-angle-right "></i>
@@ -39,20 +39,8 @@
 							</li>
 							<li>
 								<i class="fa fa-angle-right "></i>
-								<a href="http://info.p2pu.org/strategy-2014-03-20/">
-									Workflow and strategic plan
-								</a>
-							</li>
-							<li>
-								<i class="fa fa-angle-right "></i>
 								<a href="http://p2pu.org/assets/uploads/P2PUMediaKit.pdf">
 									Media Kit
-								</a>
-							</li>
-							<li>
-								<i class="fa fa-angle-right "></i>
-								<a class="donate" href="http://p2pu.org/en/donate/">
-									Donate
 								</a>
 							</li>
 						</ul>
@@ -78,6 +66,7 @@
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
 			<script type="text/javascript" src="//s3.amazonaws.com/p2pu-navigation-widget/p2pu_menu_slider.js"></script>
+            <script src="<?php echo get_template_directory_uri(); ?>/library/js/libs/isotope.min.js"></script>
 			<script>
 				Blog.Homepage.init();
 			</script>
