@@ -101,12 +101,12 @@
 							</a>
 						</li>
 						<li>
-							<a href="http://p2pu.org/en/publications/reports/">
+							<a href="http://reports.p2pu.org">
 								reports
 							</a>
 						</li>
 						<li class="active">
-							<a href="http://p2pu.org/en/publications/blog/">
+							<a href="<?php bloginfo('url'); ?>">
 								blog
 							</a>
 						</li>

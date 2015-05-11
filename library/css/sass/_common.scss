@@ -15,6 +15,10 @@ hr{
 	position: relative;
 }
 
+.logged-in .navbar-fixed-top{
+  top: 32px;
+}
+
 #inner-content{
   position: relative;
   padding-top: 1.5em;
@@ -33,9 +37,13 @@ hr{
   padding-top: 120px;
 }
 
+.home .sidebar{
+  padding-top: 10px;
+}
+
 .sidebar{
 
-  padding-top: 60px;
+  padding-top: 40px;
 
   .widget_archive, .sidebar .widget_categories {
     padding-bottom: 20px;
@@ -89,5 +97,31 @@ hr{
   }
   .widget_categories li:before, .widget_categories a{
     color: $brand-primary;
+  }
+}
+
+.sharedaddy{
+  margin-top: 20px !important;
+
+  .sd-title{
+    padding-top: 20px;
+  }
+}
+
+.sharing-anchor.sd-button.share-more{
+  @extend .hide;
+}
+
+.sharing-hidden .inner{
+  @extend .show;
+
+  position: relative !important;
+  top: -45px !important;
+  border: none !important;
+  box-shadow: none !important;
+  max-width: 100% !important;
+
+  &:before{
+    content: none !important;
   }
 }
