@@ -1,27 +1,21 @@
-#layout-toggle{
-  .grid-view, .feed-view {
-    font-size: 20px;
-    color: $gray;
-    margin: 0 5px 0 5px;
-
-    &.on{
-      color: $gray-darker;
-    }
-
-    &:focus{
-      text-decoration: none;
-    }
-  }
+.page-header{
+  padding-top: 60px;
 }
+.header{
+  &.affix{
+    width: 100%;
+    top: 108px;
+    left: 0;
+    background-color: $white;
+    z-index: 5;
+    @media (min-width: $grid-float-breakpoint) {
+      left: 0;
+      top: 98px;
+    }
 
-.social-links a{
-  font-size: 20px;
-  color: $gray;
-  margin: 0 5px 0 5px;
-
-  &:hover, &:active, &:focus{
-    color: $gray-darker;
-    text-decoration: none;
+    .container-strech{
+      @extend .container;
+    }
   }
 }
 
@@ -51,16 +45,27 @@
     background: white;
     font-size: 1.4em;
     line-height: 1;
-    height: 97%;
+    height: 93%;
   }
 
 }
 
 #main{
-  border-right: 1px solid $gray-light;
+
+  padding-top: 60px;
+
+  @media (min-width: $grid-float-breakpoint) {
+    border-right: 1px solid $gray-light;
+    padding-top: 0;
+  }
 
   .entry-content{
     padding: 20px 0;
+
+    img{
+      max-width: 100%;
+      height: auto;
+    }
 
     .blog-img{
       display: block;
@@ -82,44 +87,6 @@
   }
 }
 
-.sidebar .widget_archive, .sidebar .widget_categories {
-  padding-bottom: 20px;
-  margin: 14px 0 25px 0;
-  border-bottom: 1px solid $gray;
-}
 
-.widget_categories, .widget_meta{
-
-  ul{
-    list-style-type: none;
-    padding-left: 0;
-
-    li{
-      position: relative;
-      padding-left: 15px;
-      line-height: 1.8;
-
-      &:before{
-        font-family: 'FontAwesome';
-        content: "\f105";
-        position: absolute;
-        padding: 0;
-        left: 0;
-        top: 0;
-      }
-
-      a{
-        &:hover, &:visited{
-          text-decoration: none;
-          border-bottom: 1px dotted $brand-primary;
-        }
-      }
-    }
-
-  }
-}
-.widget_categories li:before, .widget_categories a{
-  color: $brand-primary;
-}
 
 

@@ -3,8 +3,8 @@
 
 
     <div id="inner-content" class="container clearfix">
-
-        <div id="main" class="col-md-8 col-md-offset-2" role="main">
+        <?php get_template_part('heading', 'top'); ?>
+        <div id="main" class="col-md-9 first" role="main">
 
             <div id="content">
 
@@ -50,7 +50,7 @@
             </div>
 
         </div>
-
+        <?php get_sidebar(); ?>
     </div>
 
 <?php get_footer(); ?>

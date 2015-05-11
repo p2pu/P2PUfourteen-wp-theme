@@ -14,3 +14,80 @@ hr{
 .relative {
 	position: relative;
 }
+
+#inner-content{
+  position: relative;
+  padding-top: 1.5em;
+}
+
+.single .article-header{
+  padding-top: 100px;
+}
+
+.post{
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+#post-not-found, .archive-title{
+  padding-top: 120px;
+}
+
+.sidebar{
+
+  padding-top: 60px;
+
+  .widget_archive, .sidebar .widget_categories {
+    padding-bottom: 20px;
+    margin: 14px 0 25px 0;
+    border-bottom: 1px solid $gray;
+  }
+
+  .widget_archive{
+    label{
+      display: none;
+    }
+
+    select{
+      border-color: $gray-light;
+      background-color: white;
+      padding: 0.3em;
+      font-size: 0.9em;
+      line-height: 1.2;
+    }
+  }
+
+  .widget_categories, .widget_meta{
+
+    ul{
+      list-style-type: none;
+      padding-left: 0;
+
+      li{
+        position: relative;
+        padding-left: 15px;
+        line-height: 1.8;
+
+        &:before{
+          font-family: 'FontAwesome';
+          content: "\f105";
+          position: absolute;
+          padding: 0;
+          left: 0;
+          top: 0;
+        }
+
+        a{
+          &:hover, &:visited{
+            text-decoration: none;
+            border-bottom: 1px dotted $brand-primary;
+          }
+        }
+      }
+
+    }
+  }
+  .widget_categories li:before, .widget_categories a{
+    color: $brand-primary;
+  }
+}

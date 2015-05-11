@@ -29,20 +29,32 @@
 					</div>
 
 					<div class="col-md-4 col-md-offset-1">
-                        <?php get_sidebar('sidebar2'); ?>
+                        <h4>Meta</h4>
 						<ul class="footer-links">
 							<li>
 								<i class="fa fa-angle-right "></i>
-								<a href="http://p2pu.org/en/terms/">
+								<a href="http://p2pu.org/en/terms/" target="_blank">
 									Terms of Use
 								</a>
 							</li>
 							<li>
 								<i class="fa fa-angle-right "></i>
-								<a href="http://p2pu.org/assets/uploads/P2PUMediaKit.pdf">
+								<a href="http://p2pu.org/assets/uploads/P2PUMediaKit.pdf" target="_blank">
 									Media Kit
 								</a>
 							</li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="<?php echo get_admin_url(); ?>" target="_blank">Site Admin</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                    <a href="<?php echo wp_logout_url(); ?> " target="_blank">Log out</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right"></i>
+                                <a href="<?php bloginfo('rss2_url'); ?>" target="_blank">Entries RSS</a>
+                            </li>
 						</ul>
 					</div>
 
@@ -66,7 +78,8 @@
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
 			<script type="text/javascript" src="//s3.amazonaws.com/p2pu-navigation-widget/p2pu_menu_slider.js"></script>
-            <script src="<?php echo get_template_directory_uri(); ?>/library/js/libs/isotope.min.js"></script>
+            <script src="<?php echo get_template_directory_uri(); ?>/library/js/bootstrap/collapse.js"></script>
+            <script src="<?php echo get_template_directory_uri(); ?>/library/js/bootstrap/affix.js"></script>
 			<script>
 				Blog.Homepage.init();
 			</script>

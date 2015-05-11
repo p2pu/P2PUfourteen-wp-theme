@@ -1,23 +1,27 @@
-				<div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
+<div class="sidebar col-md-3">
+    <div id="contribute" class="widget">
+        <div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
 
-					<div class="dropdown-menu">
+            <div class="dropdown-menu">
 
-						<?php get_search_form(); ?>
+                <?php get_search_form(); ?>
 
-					</div>
+            </div>
 
-					<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
+            <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 
-						<?php dynamic_sidebar( 'sidebar1' ); ?>
+                <?php dynamic_sidebar( 'sidebar1' ); ?>
 
-					<?php else : ?>
+            <?php else : ?>
 
-						<?php // This content shows up if there are no widgets defined in the backend. ?>
+                <?php // This content shows up if there are no widgets defined in the backend. ?>
 
-						<div class="alert alert-help">
-							<p><?php _e( 'Please activate some Widgets.', 'bonestheme' );  ?></p>
-						</div>
+                <div class="alert alert-help">
+                    <p><?php _e( 'Please activate some Widgets.', 'bonestheme' );  ?></p>
+                </div>
 
-					<?php endif; ?>
+            <?php endif; ?>
 
-				</div>
+        </div>
+    </div>
+</div>

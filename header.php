@@ -15,7 +15,7 @@
 	<?php // Google Chrome Frame for IE ?>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title><?php wp_title(''); ?></title>
+	<title><?php bloginfo( 'name' ); ?></title>
 
 	<?php // mobile meta (hooray!) ?>
 	<meta name="HandheldFriendly" content="True">
@@ -43,12 +43,12 @@
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-default <?php if ( is_user_logged_in() ) { echo 'logged-in'; } ?>" role="navigation" id="home">
+<nav class="navbar navbar-default navbar-fixed-top <?php if ( is_user_logged_in() ) { echo 'logged-in'; } ?>" role="navigation" id="home">
 
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			<a class="navbar-toggle" data-toggle="collapse" data-target="#nav-links-collapse">
+			<a class="navbar-toggle" data-toggle="collapse" data-target="#nav-links-collapse" href="#">
 				<i class="fa fa-bars"></i>
 			</a>
 			<a class="navbar-logo" href="/en/">
@@ -130,4 +130,17 @@
 		<!-- /.navbar-collapse -->
 	</div>
 	<!-- /.container-fluid -->
+    <div class="col-md-12 social-links-mobile clearfix">
+        <div class="pull-right">
+            <a href="https://twitter.com/p2pu" target="_blank">
+                <i class="fa fa-twitter" style="color: #55ACEE;"></i>
+            </a>
+            <a href="https://www.facebook.com/P2PUniversity?fref=ts" target="_blank">
+                <i class="fa fa-facebook" style="color: #45619D;"></i>
+            </a>
+            <a href="<?php bloginfo('rss2_url'); ?>">
+                <i class="fa fa-rss" style="color: #FF6600;"></i>
+            </a>
+        </div>
+    </div>
 </nav>

@@ -2,11 +2,13 @@
 
 <div id="inner-content" class="container clearfix">
 
-    <div id="main" class="col-md-8 col-md-offset-2" role="main">
+    <?php get_template_part('heading','fixed'); ?>
+
+    <div id="main" class="col-md-9 first" role="main">
 
         <div id="content">
 
-            <article id="post-not-found" class="hentry clearfix">
+            <article id="post-not-found" class="hentry post clearfix">
 
                 <header class="article-header">
 
@@ -48,6 +50,9 @@
         </div>
 
     </div>
+
+    <?php get_sidebar('Sidebar 1'); ?>
+
 
 </div>
 

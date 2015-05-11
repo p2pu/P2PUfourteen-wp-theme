@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
+
     <div id="inner-content" class="container clearfix">
 
-        <div id="main" class="col-md-8 col-md-offset-2 " role="main">
+        <?php get_template_part('heading','fixed'); ?>
+
+
+        <div id="main" class="col-md-9 first" role="main">
 
             <div id="content">
 
@@ -40,34 +44,6 @@
                             </p>
                             <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
 
-                            <div class="post-footer social">
-
-                                <div class="left">
-                                    <?php printf(__('If you enjoyed this article, please consider sharing it!'));?>
-                                </div>
-                                <div class="right">
-                                    <?php
-                                        $upermalink = urlencode(get_permalink());
-                                        $utitle = urlencode(get_the_title());
-                                    ?>
-
-                                        <a href="http://reddit.com/submit?phase=2&amp;url=<?php echo $upermalink;?>&amp;title=<?php echo urlencode( strip_tags($utitle) );?>" title="<?php printf( __('Share on'));?> Reddit" rel="nofollow" target="_blank"><img src="<?php bloginfo ('template_url'); ?>/library/images/share_icons/reddit.png" alt="Reddit" /></a>
-
-                                        <a href="http://www.facebook.com/sharer.php?u=<?php echo $upermalink; ?>&amp;t=<?php echo urlencode( strip_tags($utitle) );?>" title="<?php printf( __('Share on'));?> Facebook" rel="nofollow" target="_blank"><img src="<?php bloginfo ('template_url'); ?>/library/images/share_icons/facebook.png" alt="Facebook" /></a>
-
-                                        <a href="http://twitter.com/?status=New%20post%20%40p2pu%20blog%3A%20<?php echo $utitle;?>%20<?php echo $upermalink;?>%20" title="<?php printf( __('Share on'));?> Twitter" rel="nofollow" target="_blank"><img src="<?php bloginfo ('template_url'); ?>/library/images/share_icons/twitter.png" alt="Twitter" /></a>
-
-                                        <a href="https://plus.google.com/share?url=<?php echo $upermalink;?>" target="_blank" title="<?php printf( __('Share on'));?> Google+" rel="nofollow" ><img src="<?php bloginfo ('template_url'); ?>/library/images/share_icons/google.png" alt="Google+" ></a>
-
-                                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $upermalink;?>" target="_blank" title="<?php printf( __('Share on'));?> Linkedin" rel="nofollow"><img src="<?php bloginfo ('template_url'); ?>/library/images/share_icons/linkedin.png" alt="LinkedIn" ></a>
-
-                                        <a href="http://www.stumbleupon.com/submit?url=<?php echo $upermalink;?>&amp;title=<?php echo $utitle;?>" target="_blank" title="<?php printf( __('Share on'));?> Stumbleupon" rel="nofollow"><img src="<?php bloginfo ('template_url'); ?>/library/images/share_icons/stumbleupon.png" alt="StumbleUpon"></a>
-
-                                        <a href="http://www.tumblr.com/share/link?url=<?php echo $upermalink; ?>&amp;name=<?php echo $utitle; ?>" title="<?php printf( __('Share on'));?> Tumblr" rel="nofollow" target="_blank"><img src="<?php bloginfo ('template_url'); ?>/library/images/share_icons/tumblr.png" alt="tumblr"></a>
-
-                                </div>
-                                <div class="clear"></div>
-                            </div>
                         </footer>
 
                         <?php comments_template(); ?>
@@ -101,6 +77,9 @@
 
         </div>
 
+        <?php get_sidebar('Sidebar 1'); ?>
+
     </div>
+
 
 <?php get_footer(); ?>
