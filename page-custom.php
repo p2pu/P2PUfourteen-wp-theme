@@ -9,7 +9,7 @@ Template Name: Custom Page Example
 			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
-                    <?php get_template_part('heading', 'top'); ?>
+                    <?php get_template_part('heading', 'fixed'); ?>
 						<div id="main" class="col-md-9 first clearfix" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

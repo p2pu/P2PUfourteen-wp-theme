@@ -18,7 +18,7 @@ taxonomy-shoes.php
 
 
     <div id="inner-content" class="container clearfix">
-        <?php get_template_part('heading', 'top'); ?>
+        <?php get_template_part('heading', 'fixed'); ?>
         <div id="main" class="col-md-9 first" role="main">
 
             <div id="content">

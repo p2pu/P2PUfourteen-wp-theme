@@ -3,7 +3,7 @@
 
 
 <div id="inner-content" class="container clearfix">
-
+        <?php get_template_part('heading', 'fixed'); ?>
         <div id="main" class="col-md-8 col-md-offset-2" role="main">
 
             <div id="content">
