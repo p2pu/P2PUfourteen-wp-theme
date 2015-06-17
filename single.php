@@ -39,9 +39,6 @@
                         <hr/>
 
                         <footer class="article-footer">
-                            <p>
-                                Start the discussion at <a href="http://community.p2pu.org" target="_blank"><strong>community.p2pu.org</strong></a>
-                            </p>
                             <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
 
                         </footer>
