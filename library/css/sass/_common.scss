@@ -40,10 +40,17 @@ hr{
 .home .sidebar{
   padding-top: 10px;
 }
+.home .widget{
+  padding-top: 0 !important;
+}
 
 .sidebar{
 
   padding-top: 40px;
+
+  .widget{
+    padding-top: 15px;
+  }
 
   .widget_archive, .sidebar .widget_categories {
     padding-bottom: 20px;
@@ -124,4 +131,14 @@ hr{
   &:before{
     content: none !important;
   }
+}
+
+
+
+
+//----------------------------
+
+#wpstats{
+  display: none;
+  visibility: hidden;
 }

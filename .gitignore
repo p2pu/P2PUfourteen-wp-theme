@@ -53,3 +53,7 @@ temp/
 .Trashes
 
 .svn
+
+.sass-cache
+style.css.map
+
