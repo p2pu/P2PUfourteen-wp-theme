@@ -4,21 +4,35 @@ var Blog = window.Blog || {};
 
 (function ($, Blog) {
 
-	'use strict';
-	var init = function () {
-		$(function () {
-			// p2pu tab
-			$(".p2pu-tab").p2puSlider({
-				navbarContainer: '.navbar',
-				icon: '.p2pu-tab-icon',
-				iconUp: 'fa fa-chevron-down',
-				iconDown: 'fa fa-chevron-up'
-			});
+  'use strict';
+  var init = function () {
 
-		});
-	};
+    $(function () {
+      function openMenu() {
+        $('#full-page-menu').removeClass('collapsed');
+        $('body').addClass('freeze');
+      }
 
-    Blog.Homepage = {};
-    Blog.Homepage.init = init;
+      function closeMenu() {
+        $('#full-page-menu').addClass('collapsed');
+        $('body').removeClass('freeze');
+      }
+
+      $('nav .menu').on('click', function() {
+        openMenu();
+      })
+
+      $('#close-menu').on('click', function() {
+        closeMenu();
+      })
+
+      $('#full-page-menu a').click(closeMenu);
+
+
+    });
+  };
+
+  Blog.Homepage = {};
+  Blog.Homepage.init = init;
 
 }(jQuery, Blog));

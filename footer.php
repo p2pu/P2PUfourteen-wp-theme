@@ -64,29 +64,6 @@
 			<script>
 				Blog.Homepage.init();
             </script>
-            <script>
-                $(function() {
-                    function openMenu() {
-                        $('#full-page-menu').removeClass('collapsed');
-                        $('body').addClass('freeze');
-                    }
-  
-                    function closeMenu() {
-                        $('#full-page-menu').addClass('collapsed');
-                        $('body').removeClass('freeze');
-                    }
-  
-                    $('nav .menu').on('click', function() {
-                        openMenu();
-                    })
-  
-                    $('#close-menu').on('click', function() {
-                        closeMenu();
-                    })
-  
-                    $('#full-page-menu a').click(closeMenu);
-                })
-            </script>
 
 	</body>
 
