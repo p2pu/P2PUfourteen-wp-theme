@@ -43,104 +43,108 @@
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-default navbar-fixed-top <?php if ( is_user_logged_in() ) { echo 'logged-in'; } ?>" role="navigation" id="home">
+<nav class="nav-collapsed <?php if ( is_user_logged_in() ) { echo 'logged-in'; } ?>" role="navigation" id="home">
 
-	<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<a class="navbar-toggle" data-toggle="collapse" data-target="#nav-links-collapse" href="#">
-				<i class="fa fa-bars"></i>
-			</a>
-			<a class="navbar-logo" href="/en/">
-				<img src="<?php echo get_template_directory_uri(); ?>/library/images/p2pu-logo-2x.png" alt="P2PU Logo"
-					width="122" height="68">
-			</a>
-			<a class="p2pu-tab" href="#">
-				<i class="fa fa-chevron-down p2pu-tab-icon"></i>
-			</a>
-		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="nav-links-collapse">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="">
-					<a href="http://p2pu.org/en/our-work/">Our work</a>
-				</li>
-				<li class="dropdown has-subnav">
-					<a href="http://p2pu.org/en/about/">About</a>
-					<span class="fa fa-caret-down dropdown-toggle visible-xs-block visible-sm-block" data-toggle="dropdown"></span>
-					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
-						<li>
-							<a href="http://p2pu.org/en/about/philosophy/">
-								Philosophy
-							</a>
-						</li>
-						<li>
-							<a href="http://p2pu.org/en/about/people/">
-								People
-							</a>
-						</li>
-						<li>
-							<a href="http://p2pu.org/en/about/credits/">
-								Credits and thanks
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li class="active dropdown has-subnav">
-					<a href="http://p2pu.org/en/publications/roundtables/">Publications</a>
-					<span class="fa fa-caret-down dropdown-toggle visible-xs-block visible-sm-block" data-toggle="dropdown"></span>
-					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
-						<li>
-							<a href="http://p2pu.org/en/publications/roundtables/">
-								P2PU Roundtables
-							</a>
-						</li>
-						<li>
-							<a href="http://p2pu.org/en/publications/talks/">
-								Presentations
-							</a>
-						</li>
-						<li>
-							<a href="http://reports.p2pu.org">
-								reports
-							</a>
-						</li>
-						<li class="active">
-							<a href="<?php bloginfo('url'); ?>">
-								blog
-							</a>
-						</li>
-						<li>
-							<a href="http://data.p2pu.org/" target="_blank">
-								data
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li class="">
-					<a href="http://p2pu.org/en/connect/">Connect with us</a>
-				</li>
-				<li>
-					<div class="donate-btn-wrap">
-						<a class="donate" href="http://p2pu.org/en/donate/" data-toggle="modal" data-target="#donate-modal">Donate</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<!-- /.navbar-collapse -->
-	</div>
-	<!-- /.container-fluid -->
-    <div class="col-md-12 social-links-mobile clearfix">
-        <div class="pull-right">
-            <a href="https://twitter.com/p2pu" target="_blank">
-                <i class="fa fa-twitter" style="color: #55ACEE;"></i>
+	<span class="logo dark">
+		<a href="/en/">
+			<img src="<?php echo get_template_directory_uri(); ?>/library/images/p2pu-logo-2x.png" alt="P2PU logo">
+		</a>
+	</span>
+	<span class="menu"><i class="fa fa-bars" aria-hidden="true"></i>MENU</span>
+
+<div id="full-page-menu" class="collapsed">
+  <div class="content-container">
+    <div id="close-menu"><i class="fa fa-times"></i></div>
+    
+      <div class="menu-section full-column">
+        <div class="nav-container">
+          <h2>
+            <a href="https://www.p2pu.org/en/">
+              Home
+              <i class="fa fa-arrow-right"></i>
             </a>
-            <a href="https://www.facebook.com/P2PUniversity?fref=ts" target="_blank">
-                <i class="fa fa-facebook" style="color: #45619D;"></i>
-            </a>
-            <a href="<?php bloginfo('rss2_url'); ?>">
-                <i class="fa fa-rss" style="color: #FF6600;"></i>
-            </a>
+          </h2>
+          
+            <p><a href="https://www.p2pu.org/en/#search">Join a learning circle</a></p>
+          
         </div>
+      </div>
+    
+      <div class="menu-section full-column">
+        <div class="nav-container">
+          <h2>
+            <a href="https://www.p2pu.org/en/facilitate/">
+              Facilitate
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </h2>
+          
+            <p><a href="https://www.p2pu.org/en/handbook/">Handbook</a></p>
+          
+            <p><a href="https://groups.google.com/a/p2pu.org/forum/#!forum/community">Community</a></p>
+          
+            <p><a href="https://learningcircles.p2pu.org/en/courses/">Courses</a></p>
+          
+            <p><a href="https://learningcircles.p2pu.org/en/accounts/login/">Dashboard</a></p>
+          
+        </div>
+      </div>
+    
+      <div class="menu-section full-column">
+        <div class="nav-container">
+          <h2>
+            <a href="https://www.p2pu.org/en/about/">
+              About
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </h2>
+          
+            <p><a href="https://www.p2pu.org/en/about/people/">People</a></p>
+          
+            <p><a href="https://www.p2pu.org/en/about/values/">Values</a></p>
+          
+            <p><a href="https://www.p2pu.org/en/jobs/">Job openings</a></p>
+          
+        </div>
+      </div>
+    
+      <div class="menu-section full-column">
+        <div class="nav-container">
+          <h2>
+            <a href="http://info.p2pu.org/">
+              Stories
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </h2>
+          
+            <p><a href="http://info.p2pu.org/2017/06/14/when-seekers-and-rebels-meet-or-my-experience-studying-the-learning-circles/">Seekers and Rebels</a></p>
+          
+            <p><a href="http://info.p2pu.org/2017/06/02/will-people-show-up/">Will People Show Up?</a></p>
+          
+            <p><a href="http://info.p2pu.org/2017/05/16/peer-2-peer-coast-2-coast/">Coast 2 Coast</a></p>
+          
+        </div>
+      </div>
+    
+      <div class="menu-section full-column">
+        <div class="nav-container">
+          <h2>
+            <a href="https://www.p2pu.org/en/workwithus/">
+              Work with us
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </h2>
+          
+            <p><a href="https://www.p2pu.org/en/donate/">Donate</a></p>
+          
+            <p><a href="https://www.p2pu.org/en/connect/">Connect</a></p>
+          
+        </div>
+      </div>
+    
+    <div class="menu-section parent-column">
+    
     </div>
+  </div>
+</div>
 </nav>

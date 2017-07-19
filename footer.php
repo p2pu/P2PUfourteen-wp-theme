@@ -1,88 +1,93 @@
-			<footer class="p2pu-footer">
-
-				<div class="container">
-
-					<ul class="footer-social clearfix">
-						<li><a target="_blank" href="http://community.p2pu.org/"><i class="fa fa-weixin"></i></a>
-						</li>
-						<li><a target="_blank" href="https://twitter.com/p2pu"><i class="fa fa-twitter"></i></a>
-						</li>
-						<li>
-							<a target="_blank" href="https://www.facebook.com/P2PUniversity">
-								<i class="fa fa-facebook"></i>
-							</a>
-						</li>
-					</ul>
-
-					<hr>
-					<div class="col-md-4 first">
-						<h4>What is P2PU?</h4>
-
-						<p>
-							The Peer 2 Peer University is a grassroots open education project that organizes learning
-							outside of institutional walls and gives learners recognition for their achievements. P2PU
-							creates a model for lifelong learning alongside traditional formal higher education.
-							Leveraging the internet and educational materials openly available online, P2PU enables
-							high-quality low-cost education opportunities.
-						</p>
-
-					</div>
-
-					<div class="col-md-4 col-md-offset-1">
-                        <h4>Meta</h4>
-						<ul class="footer-links">
-							<li>
-								<i class="fa fa-angle-right "></i>
-								<a href="http://p2pu.org/en/terms/" target="_blank">
-									Terms of Use
-								</a>
-							</li>
-							<li>
-								<i class="fa fa-angle-right "></i>
-								<a href="http://p2pu.org/assets/uploads/P2PUMediaKit.pdf" target="_blank">
-									Media Kit
-								</a>
-							</li>
-                            <li>
-                                <i class="fa fa-angle-right"></i>
-                                <a href="<?php echo get_admin_url(); ?>" target="_blank">Site Admin</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-angle-right"></i>
-                                    <a href="<?php echo wp_logout_url(); ?> " target="_blank">Log out</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-angle-right"></i>
-                                <a href="<?php bloginfo('rss2_url'); ?>" target="_blank">Entries RSS</a>
-                            </li>
-						</ul>
-					</div>
-
-
-					<div class="pull-right col-md-3 cc-by-sa">
-						<img src="http://p2pu.org/assets/images/cc-icons.png" alt="CC-BY-SA Icon">
-
-						<p>
-							Unless otherwise noted, all the materials on this site are licensed under a
-							<a target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">
-								Creative Commons Attribution Share Alike 4.0</a> Unported license.
-						</p>
-					</div>
-
-				</div>
-
-			</footer>
+            <footer class="home-footer">
+              <div class="columns-container row justify-content-between">
+                <div class="column-item col-md-4 col-sm-6 col-xs-12 social">
+                  <header>
+                    <div class="subtitle small centered">
+                      <div class="underline light">
+                        <div class="text"><h4>Stay in touch</h4></div>
+                      </div>
+                    </div>
+                  </header>
+                  <div class="content">
+                    <div class="twitter">
+                      <a href="https://twitter.com/p2pu">
+                        <span><i class="fa fa-twitter" aria-hidden="true"></i>@P2PU</span>
+                      </a>
+                    </div>
+                    <div class="facebook">
+                      <a href="https://www.facebook.com/P2PUniversity">
+                        <span><i class="fa fa-facebook" aria-hidden="true"></i>P2PUniversity</span>
+                      </a>
+                    </div>
+                    <div class="email">
+                      <a href="mailto:thepeople@p2pu.com">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i>thepeople@p2pu.com</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+ 
+                <div class="column-item col-md-4 col-sm-6 col-xs-12 offset-md-4 newsletter">
+                  <header>
+                    <div class="subtitle small centered">
+                      <div class="underline light">
+                        <div class="text"><h4>Get the newsletter</h4></div>
+                      </div>
+                    </div>
+                  </header>
+                  <div class="content" id="mc_embed_signup">
+                    <form action="//p2pu.us2.list-manage.com/subscribe/post?u=f080ec78070523d59ef613eda&amp;id=06e9c4ece8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                      <div id="mc_embed_signup_scroll">
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
+                          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f080ec78070523d59ef613eda_06e9c4ece8" tabindex="-1" value=""></div>
+                        <div class="clear">
+                          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn p2pu-btn light">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+ 
+              <div class="toc">
+                <p>Unless otherwise noted, all the materials on this site are licensed under CC BY-SA 4.0. | <a href="https://www.p2pu.org/en/terms/">Terms and Conditions/Privacy</a></p>
+              </div>
+            </footer>
 
 		</div>
 
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
-			<script type="text/javascript" src="//s3.amazonaws.com/p2pu-navigation-widget/p2pu_menu_slider.js"></script>
             <script src="<?php echo get_template_directory_uri(); ?>/library/js/bootstrap/collapse.js"></script>
             <script src="<?php echo get_template_directory_uri(); ?>/library/js/bootstrap/affix.js"></script>
 			<script>
 				Blog.Homepage.init();
-			</script>
+            </script>
+            <script>
+                $(function() {
+                    function openMenu() {
+                        $('#full-page-menu').removeClass('collapsed');
+                        $('body').addClass('freeze');
+                    }
+  
+                    function closeMenu() {
+                        $('#full-page-menu').addClass('collapsed');
+                        $('body').removeClass('freeze');
+                    }
+  
+                    $('nav .menu').on('click', function() {
+                        openMenu();
+                    })
+  
+                    $('#close-menu').on('click', function() {
+                        closeMenu();
+                    })
+  
+                    $('#full-page-menu a').click(closeMenu);
+                })
+            </script>
+
 	</body>
 
 </html>
