@@ -46,7 +46,7 @@
 <nav class="nav-collapsed <?php if ( is_user_logged_in() ) { echo 'logged-in'; } ?>" role="navigation" id="home">
 
 	<span class="logo dark">
-		<a href="/en/">
+		<a href="https://www.p2pu.org/en/">
 			<img src="<?php echo get_template_directory_uri(); ?>/library/images/p2pu-logo-2x.png" alt="P2PU logo">
 		</a>
 	</span>
