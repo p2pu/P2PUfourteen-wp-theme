@@ -4,6 +4,11 @@ body {
   }
 }
 
+.row {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+
 nav {
   z-index: $zindex-navbar-fixed;
   font-family: $headings-font-family;
