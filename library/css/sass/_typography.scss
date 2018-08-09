@@ -7,9 +7,31 @@ body {
   }
 
   a {
-    color: $gray-darker;
+    color: $p2pu-blue;
+
+    &.light {
+      color: $white;
+    }
+
+    &.dark {
+      color: $gray-darker;
+    }
+
+    &.underline {
+      text-decoration: underline;
+    }
+
     &:hover, &:focus, &:active {
-      color: $p2pu-orange;
+      opacity: 0.9;
+    }
+
+    &.undecorated {
+      color: inherit;
+
+      &:hover, &:focus, &:active {
+        opacity: 1;
+        text-decoration: none;
+      }
     }
   }
 
@@ -51,7 +73,7 @@ body {
         font-family: $headings-font-family;
         font-weight: bold;
         text-transform: uppercase;
-        transform: translateY(0.1em);
+        transform: translateY(0.3em);
       }
 
       &:before {
@@ -62,7 +84,7 @@ body {
         right: 100%;
         bottom: 0;
         background: $gray-light;
-        height: 0.8em;
+        height: 0.6em;
         -webkit-transition-property: right;
         transition-property: right;
         -webkit-transition-duration: 0.3s;
@@ -79,7 +101,7 @@ body {
 
       &.dark {
         &:before {
-          background: transparentize($gray-darker, 0.6);
+          background: transparentize($gray-darker, 0.8);
         }
       }
     }
@@ -106,5 +128,57 @@ body {
     text-align: center;
     padding-top: $padding-sm;
     padding-bottom: $padding-sm;
+  }
+
+  .caption {
+    small {
+      font-size: $font-size-small;
+    }
+  }
+
+  .minicaps {
+    font-size: $font-size-small;
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  header.page-title {
+    @include flex-column-centered;
+    text-transform: uppercase;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.blue-text {
+  color: $p2pu-blue;
+}
+
+.green-text {
+  color: $p2pu-green;
+}
+
+.orange-text {
+  color: $p2pu-orange;
+}
+
+.yellow-text {
+  color: $p2pu-yellow;
+}
+
+@media (max-width: 768px) {
+  body {
+    .subtitle {
+      font-size: $font-size-h3;
+
+      .underline {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
   }
 }

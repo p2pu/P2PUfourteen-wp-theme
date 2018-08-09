@@ -45,106 +45,165 @@
 
 <nav class="nav-collapsed <?php if ( is_user_logged_in() ) { echo 'logged-in'; } ?>" role="navigation" id="home">
 
-	<span class="logo dark">
-		<a href="https://www.p2pu.org/en/">
-			<img src="<?php echo get_template_directory_uri(); ?>/library/images/p2pu-logo-2x.png" alt="P2PU logo">
-		</a>
-	</span>
-	<span class="menu"><i class="fa fa-bars" aria-hidden="true"></i>MENU</span>
+  <div class="logo dark">
+    <a href="https://www.p2pu.org/en/">
+	  <img src="<?php echo get_template_directory_uri(); ?>/library/images/p2pu-logo-2x.png" alt="P2PU logo">
+    </a>
+  </div>
 
-<div id="full-page-menu" class="collapsed">
-  <div class="content-container">
-    <div id="close-menu"><i class="fa fa-times"></i></div>
-    
-      <div class="menu-section full-column">
-        <div class="nav-container">
-          <h2>
-            <a href="https://www.p2pu.org/en/">
-              Home
-              <i class="fa fa-arrow-right"></i>
-            </a>
-          </h2>
-          
-            <p><a href="https://www.p2pu.org/en/#search">Join a learning circle</a></p>
-          
+  <div class="nav-items">
+    <div class="account nav-item" id="nav-account"></div>
+
+    <button class="menu nav-item" role="button">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <span class="uppercase hidden-xs">Menu</span>
+    </button>
+  </div>
+
+  <div id="full-page-menu" class="collapsed" aria-hidden="true" role="navigation">
+    <button id="close-menu" role="button" aria-label="Close"><i class="fa fa-times"></i></button>
+    <div class="content-container row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+        <div class="content">
+
+          <div class="menu-section top-level">
+            <div class="nav-container">
+              <a href="https://www.p2pu.org/en/">
+                <div class="menu-item">
+                  <span class="bullet"></span>
+                  <span class="text">Home</span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="menu-section top-level">
+            <div class="nav-container">
+              <a href="https://www.p2pu.org/en/learning-circles/">
+                <div class="menu-item">
+                  <span class="bullet"></span>
+                  <span class="text">Learning Circles</span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="menu-section top-level">
+            <div class="nav-container">
+              <a href="https://www.p2pu.org/en/facilitate/">
+                <div class="menu-item">
+                  <span class="bullet"></span>
+                  <span class="text">Facilitate</span>
+                </div>
+              </a>
+
+              <a href="https://www.p2pu.org/en/courses/" class="dark">
+                <div class="menu-item submenu">
+                  <span class="bullet"></span>
+                  <span class="text">Courses</span>
+                </div>
+              </a>
+
+              <a href="https://learningcircles.p2pu.org/en/facilitator/" class="dark">
+                <div class="menu-item submenu">
+                  <span class="bullet"></span>
+                  <span class="text">Dashboard</span>
+                </div>
+              </a>
+
+              <a href="https://learningcircles.p2pu.org/en/studygroup/create/" class="dark">
+                <div class="menu-item submenu">
+                  <span class="bullet"></span>
+                  <span class="text">Create a learning circle</span>
+                </div>
+              </a>
+
+              <a href="https://community.p2pu.org/tags/faq/" class="dark">
+                <div class="menu-item submenu">
+                  <span class="bullet"></span>
+                  <span class="text">FAQ</span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="menu-section top-level">
+            <div class="nav-container">
+              <a href="https://community.p2pu.org/">
+                <div class="menu-item">
+                  <span class="bullet"></span>
+                  <span class="text">Community</span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="menu-section top-level">
+            <div class="nav-container">
+              <a href="https://info.p2pu.org/">
+                <div class="menu-item">
+                  <span class="bullet"></span>
+                  <span class="text">Blog</span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="menu-section top-level">
+            <div class="nav-container">
+              <a href="https://www.p2pu.org/en/about/">
+                <div class="menu-item">
+                  <span class="bullet"></span>
+                  <span class="text">About P2PU</span>
+                </div>
+              </a>
+
+              <a href="https://www.p2pu.org/en/workwithus/" class="dark">
+                <div class="menu-item submenu">
+                  <span class="bullet"></span>
+                  <span class="text">Hire us</span>
+                </div>
+              </a>
+
+              <a href="https://www.p2pu.org/en/jobs/" class="dark">
+                <div class="menu-item submenu">
+                  <span class="bullet"></span>
+                  <span class="text">Jobs</span>
+                </div>
+              </a>
+
+              <a href="https://shop.spreadshirt.com/p2pu/" class="dark">
+                <div class="menu-item submenu">
+                  <span class="bullet"></span>
+                  <span class="text">Shop</span>
+                </div>
+              </a>
+
+              <a href="https://www.p2pu.org/en/donate/" class="dark">
+                <div class="menu-item submenu">
+                  <span class="bullet"></span>
+                  <span class="text">Donate</span>
+                </div>
+              </a>
+
+              <a href="https://www.p2pu.org/en/connect/" class="dark">
+                <div class="menu-item submenu">
+                  <span class="bullet"></span>
+                  <span class="text">Contact</span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
         </div>
       </div>
-    
-      <div class="menu-section full-column">
-        <div class="nav-container">
-          <h2>
-            <a href="https://www.p2pu.org/en/facilitate/">
-              Facilitate
-              <i class="fa fa-arrow-right"></i>
-            </a>
-          </h2>
-          
-            <p><a href="https://www.p2pu.org/en/handbook/">Handbook</a></p>
-          
-            <p><a href="https://groups.google.com/a/p2pu.org/forum/#!forum/community">Community</a></p>
-          
-            <p><a href="https://learningcircles.p2pu.org/en/courses/">Courses</a></p>
-          
-            <p><a href="https://learningcircles.p2pu.org/en/accounts/login/">Dashboard</a></p>
-          
-        </div>
-      </div>
-    
-      <div class="menu-section full-column">
-        <div class="nav-container">
-          <h2>
-            <a href="https://www.p2pu.org/en/about/">
-              About
-              <i class="fa fa-arrow-right"></i>
-            </a>
-          </h2>
-          
-            <p><a href="https://www.p2pu.org/en/about/people/">People</a></p>
-          
-            <p><a href="https://www.p2pu.org/en/about/values/">Values</a></p>
-          
-            <p><a href="https://www.p2pu.org/en/jobs/">Job openings</a></p>
-          
-        </div>
-      </div>
-    
-      <div class="menu-section full-column">
-        <div class="nav-container">
-          <h2>
-            <a href="http://info.p2pu.org/">
-              Stories
-              <i class="fa fa-arrow-right"></i>
-            </a>
-          </h2>
-          
-            <p><a href="http://info.p2pu.org/2017/06/14/when-seekers-and-rebels-meet-or-my-experience-studying-the-learning-circles/">Seekers and Rebels</a></p>
-          
-            <p><a href="http://info.p2pu.org/2017/06/02/will-people-show-up/">Will People Show Up?</a></p>
-          
-            <p><a href="http://info.p2pu.org/2017/05/16/peer-2-peer-coast-2-coast/">Coast 2 Coast</a></p>
-          
-        </div>
-      </div>
-    
-      <div class="menu-section full-column">
-        <div class="nav-container">
-          <h2>
-            <a href="https://www.p2pu.org/en/workwithus/">
-              Work with us
-              <i class="fa fa-arrow-right"></i>
-            </a>
-          </h2>
-          
-            <p><a href="https://www.p2pu.org/en/donate/">Donate</a></p>
-          
-            <p><a href="https://www.p2pu.org/en/connect/">Connect</a></p>
-          
-        </div>
-      </div>
-    
-    <div class="menu-section parent-column">
-    
     </div>
   </div>
-</div>
+
 </nav>
