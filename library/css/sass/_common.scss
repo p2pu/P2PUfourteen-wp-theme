@@ -95,7 +95,7 @@ hr{
         a{
           &:hover, &:visited{
             text-decoration: none;
-            border-bottom: 1px dotted $brand-primary;
+            border-bottom: 1px dotted $primary;
           }
         }
       }
@@ -103,7 +103,7 @@ hr{
     }
   }
   .widget_categories li:before, .widget_categories a{
-    color: $brand-primary;
+    color: $primary;
   }
 }
 
@@ -116,11 +116,11 @@ hr{
 }
 
 .sharing-anchor.sd-button.share-more{
-  @extend .hide;
+  @extend .hide !optional;
 }
 
 .sharing-hidden .inner{
-  @extend .show;
+  @extend .show !optional;
 
   position: relative !important;
   top: -45px !important;
