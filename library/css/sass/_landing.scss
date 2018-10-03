@@ -5,6 +5,7 @@
     left: 0;
     background-color: $white;
     z-index: 5;
+
     @media (min-width: map-get($grid-breakpoints, "sm")) {
       left: 0;
       top: 98px;
@@ -48,12 +49,6 @@
 }
 
 #main{
-
-  @media (min-width: map-get($grid-breakpoints, "sm")) {
-    border-right: 1px solid $gray-light;
-    padding-top: 0;
-  }
-
   .entry-content{
     padding: 20px 0;
 

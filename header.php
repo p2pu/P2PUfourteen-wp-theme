@@ -25,15 +25,16 @@
 	<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-	<!--[if IE]>
-	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-	<![endif]-->
-	<?php // or, set /favicon.ico for IE10 win ?>
-	<meta name="msapplication-TileColor" content="#f01d4f">
-	<meta name="msapplication-TileImage"
-	      content="<?php echo get_template_directory_uri(); ?>/favicon.png">
+  <!--[if IE]>
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+  <![endif]-->
+  <?php // or, set /favicon.ico for IE10 win ?>
+  <meta name="msapplication-TileColor" content="#f01d4f">
+  <meta name="msapplication-TileImage"
+        content="<?php echo get_template_directory_uri(); ?>/favicon.png">
 
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+  <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<?php wp_head(); ?>
 
 	<?php // drop Google Analytics Here ?>
@@ -63,7 +64,7 @@
   <div id="full-page-menu" class="collapsed" aria-hidden="true" role="navigation">
     <button id="close-menu" role="button" aria-label="Close"><i class="fa fa-times"></i></button>
     <div class="content-container row">
-      <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-6">
         <div class="content">
 
           <div class="menu-section top-level">

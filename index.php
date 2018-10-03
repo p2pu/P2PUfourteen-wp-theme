@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-	<div id="inner-content" class="container clearfix">
+	<main id="inner-content" class="container clearfix">
 
         <?php get_template_part('heading', 'top'); ?>
 
-		<div id="main" class="col-md-9 first" role="main">
+		<div id="main" class="col-12 p-0 border-0" role="main">
             <div id="content">
 			<?php
 
@@ -53,10 +53,7 @@
                 </div>
 			<?php endif; ?>
 		</div>
-
-        <?php get_sidebar('Sidebar 1'); ?>
-
-	</div>
+	</main>
 
 
 

@@ -14,12 +14,12 @@
 
 
 
-	<section class="entry-content clearfix">
+	<section class="entry-content row">
 
 		<?php
 		if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 			?>
-			<div class="col-md-3 first">
+			<div class="col-md-3">
 				<a href="<?php the_permalink() ?>" class="blog-img">
 					<?php echo get_the_post_thumbnail( $id, array( 210, 210) ); ?>
 				</a>
