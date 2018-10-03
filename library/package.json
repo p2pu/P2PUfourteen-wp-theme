@@ -15,6 +15,6 @@
     "grunt-contrib-watch": "^0.6.1"
   },
   "dependencies": {
-    "p2pu-theme": "^1.0.4"
+    "p2pu-theme": "^1.0.5"
   }
 }
