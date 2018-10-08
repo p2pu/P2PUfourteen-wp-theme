@@ -1,16 +1,15 @@
 <?php get_header(); ?>
 
-
-    <div id="inner-content" class="container clearfix">
+    <main id="inner-content" class="container clearfix">
 
         <?php get_template_part('heading','fixed'); ?>
 
 
-        <div id="main" class="col-md-9 first" role="main">
+        <div id="main" class="col-12 border-0" role="main">
 
             <div id="content">
 
-                <a href="<?php bloginfo('url'); ?>"><i class="fa fa-refresh"></i> Show all posts</a>
+                <a href="<?php bloginfo('url'); ?>"><i class="fas fa-sync"></i> Show all posts</a>
 
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -43,8 +42,6 @@
 
                         </footer>
 
-                        <?php comments_template(); ?>
-
                     </article>
 
                 <?php endwhile; ?>
@@ -67,16 +64,14 @@
 
                 <br/>
                 <p>
-                    <a href="<?php bloginfo('url'); ?>"><i class="fa fa-refresh"></i> Show all posts</a>
+                    <a href="<?php bloginfo('url'); ?>"><i class="fas fa-sync"></i> Show all posts</a>
                 </p>
 
             </div>
 
         </div>
 
-        <?php get_sidebar('Sidebar 1'); ?>
-
-    </div>
+    </main>
 
 
 <?php get_footer(); ?>

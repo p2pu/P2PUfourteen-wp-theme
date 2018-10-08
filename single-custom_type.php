@@ -17,9 +17,9 @@ single-bookmarks.php
 
 
 
-    <div id="inner-content" class="container clearfix">
+    <main id="inner-content" class="container clearfix">
         <?php get_template_part('heading', 'top'); ?>
-        <div id="main" class="col-md-9 first" role="main">
+        <div id="main" class="col-12 border-0" role="main">
 
                 <div id="content">
 
@@ -56,8 +56,6 @@ single-bookmarks.php
 
                     </footer>
 
-                    <?php comments_template(); ?>
-
                 </article>
 
                 <?php endwhile; ?>
@@ -81,7 +79,6 @@ single-bookmarks.php
             </div>
 
         </div>
-        <?php get_sidebar(); ?>
-    </div>
+    </main>
 
 <?php get_footer(); ?>

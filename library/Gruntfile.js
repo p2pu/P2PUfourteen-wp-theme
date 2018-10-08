@@ -8,7 +8,8 @@ module.exports = function (grunt) {
         sass: {
             dist: {
                 options: {
-                    style: 'compressed'
+                    style: 'compressed',
+                    loadPath: 'node_modules'
                 },
                 files: {
                     'css/style.css': 'css/p2pustrap-custom.scss'

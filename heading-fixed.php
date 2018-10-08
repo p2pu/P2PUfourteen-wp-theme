@@ -1,24 +1,10 @@
-<div class="col-md-12 social-links clearfix">
-    <div class="pull-right">
-        <a href="https://twitter.com/p2pu" target="_blank">
-            <i class="fa fa-twitter" style="color: #55ACEE;"></i>
-        </a>
-        <a href="https://www.facebook.com/P2PUniversity?fref=ts" target="_blank">
-            <i class="fa fa-facebook" style="color: #45619D;"></i>
-        </a>
-        <a href="<?php bloginfo('rss2_url'); ?>">
-            <i class="fa fa-rss" style="color: #FF6600;"></i>
-        </a>
-    </div>
-</div>
-
 <div class="header affix">
     <div class="container-strech">
         <hr style="margin-bottom: 6px;">
         <div class="row">
             <div class="col-md-9">
                 <div class="row">
-                    <div class="pull-left col-md-6 col-md-6 col-xs-12">
+                    <div class="pull-left col-md-6 col-md-6 col-12">
                         <?php get_search_form(); ?>
                     </div>
                     <?php /*
@@ -29,15 +15,15 @@
                 </div>
             </div>
             <div class="col-md-3 social-links">
-                <div class="pull-right">
+                <div class="float-right">
                     <a href="https://twitter.com/p2pu" target="_blank">
-                        <i class="fa fa-twitter" style="color: #55ACEE;"></i>
+                        <i class="fab fa-twitter" style="color: #55ACEE;"></i>
                     </a>
                     <a href="https://www.facebook.com/P2PUniversity?fref=ts" target="_blank">
-                        <i class="fa fa-facebook" style="color: #45619D;"></i>
+                        <i class="fab fa-facebook" style="color: #45619D;"></i>
                     </a>
                     <a href="<?php bloginfo('rss2_url'); ?>">
-                        <i class="fa fa-rss" style="color: #FF6600;"></i>
+                        <i class="fas fa-rss" style="color: #FF6600;"></i>
                     </a>
                 </div>
             </div>

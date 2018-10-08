@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 
-    <div id="inner-content" class="container clearfix">
+    <main id="inner-content" class="container clearfix">
         <?php get_template_part('heading', 'fixed'); ?>
-        <div id="main" class="col-md-9 first" role="main">
+        <div id="main" class="col-12 border-0" role="main">
             <div id="content">
+                <p><a href="<?php bloginfo('url'); ?>"><i class="fas fa-sync"></i> Show all posts</a></p>
 
                 <?php if (have_posts()) : ?>
 
@@ -28,12 +29,12 @@
 
                     <?php else : ?>
 
-                            <article id="post-not-found" class="hentry clearfix">
-                                <div class="col-md-3 col-sm-3 col-xs-12">
+                            <article id="post-not-found" class="hentry clearfix row">
+                                <div class="col-md-3 col-sm-3 col-12">
                                     <img src="<?php bloginfo('template_url'); ?>/library/images/noresults.jpg"
                                          alt="Sorry but no results have been found"/>
                                 </div>
-                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                <div class="col-md-9 col-sm-9 col-12">
                                 <header class="article-header">
                                     <h1><?php _e( 'Sorry, No Results.', 'bonestheme' ); ?></h1>
                                 </header>
@@ -48,7 +49,6 @@
             </div>
 
         </div>
-        <?php get_sidebar(); ?>
-    </div>
+    </main>
 
 <?php get_footer(); ?>

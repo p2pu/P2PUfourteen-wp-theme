@@ -6,7 +6,7 @@ Template Name: Custom Page Example
 
 <?php get_header(); ?>
 
-			<div id="content">
+			<main id="content">
 
 				<div id="inner-content" class="wrap clearfix">
                     <?php get_template_part('heading', 'fixed'); ?>
@@ -34,7 +34,7 @@ Template Name: Custom Page Example
 
 								</header>
 
-								<section class="entry-content clearfix" itemprop="articleBody">
+								<section class="entry-content row" itemprop="articleBody">
 									<?php the_content(); ?>
 								</section>
 
@@ -65,10 +65,8 @@ Template Name: Custom Page Example
 
 						</div>
 
-						<?php get_sidebar(); ?>
-
 				</div>
 
-			</div>
+			</main>
 
 <?php get_footer(); ?>
