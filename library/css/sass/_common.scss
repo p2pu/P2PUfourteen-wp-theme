@@ -1,10 +1,19 @@
-
-blockquote{
-	font-size: 0.9em !important;
-}
-
 hr{
   border-color: $gray-light;
+}
+
+h1, h2, h3 {
+  font-family: $font-family-sans-serif;
+}
+
+main {
+  background-color: inherit;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 6px solid $gray-light;
+  padding-left: 1em;
 }
 
 .first{
@@ -23,13 +32,63 @@ hr{
   position: relative;
 }
 
-.single .article-header{
-  padding-top: 100px;
+.header-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100vw;
+
+  img {
+    background-color: $p2pu-light-blue;
+    object-fit: cover;
+    width: 100%;
+    min-height: 500px;
+    height: 60vh;
+    clip-path: polygon(0 65%, 50% 100%, 100% 65%, 100% 0, 0 0);
+  }
 }
 
 .post{
   font-size: 18px;
   line-height: 1.8;
+}
+
+article.single-post {
+  margin-top: 25vh;
+
+  .card-body {
+    padding: 2.25em;
+  }
+
+  .entry-content {
+    h1, h2, h3 {
+      margin-top: 1.25em;
+      margin-bottom: 0.75em;
+      line-height: 1.25;
+    }
+
+    .wp-block-image {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .badge {
+    a {
+      color: $white;
+      font-weight: normal;
+
+      &:hover, &:focus {
+        color: $white;
+      }
+    }
+  }
 }
 
 #post-not-found, .archive-title{
@@ -132,10 +191,8 @@ hr{
   }
 }
 
-.wp-caption-text{
-	font-size: 0.8em;
-  font-variant: small-caps;
-  font-style: italic;
+.wp-caption-text, figcaption {
+	font-size: 0.85em;
 }
 
 .aligncenter{
@@ -144,6 +201,21 @@ hr{
 
 [id^="attachment"], .wp-caption{
 	margin: 2em auto;
+}
+
+.byline {
+  a {
+    color: inherit;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .single-post {
+    .container {
+      max-width: 960px;
+    }
+  }
 }
 
 

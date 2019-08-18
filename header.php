@@ -42,7 +42,7 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('bg-light'); ?>>
 
 <nav class="nav-collapsed <?php if ( is_user_logged_in() ) { echo 'logged-in'; } ?>" role="navigation" id="home">
 

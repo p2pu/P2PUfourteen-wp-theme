@@ -10,54 +10,48 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
+<div class="entry-content col-12 col-md-4 my-4">
+    <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix post-preview' ); ?> role="article">
+        <div class="card">
+    		<?php
+    		if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+    			?>
+            	<a href="<?php the_permalink() ?>">
+        			<div class="card-img-top">
+    					<?php echo get_the_post_thumbnail( $id, array(300,200) ); ?>
+        			</div>
+                </a>
+    			<?php
+    		} ?>
+    		<div class="excerpt-wraper card-body">
+                <header class="article-header">
+                    <h3 class="card-title">
+                        <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                        &nbsp;
+                        <?php if ( is_user_logged_in() ) {
+                            echo '<a href="' . get_edit_post_link( $id, $context ) . '">[<i class="fa fa-pencil-square-o"></i> edit]</a>';
+                        }
+                        ?>
+                    </h3>
+                </header>
 
 
-
-	<section class="entry-content row">
-
-		<?php
-		if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-			?>
-			<div class="col-md-3">
-				<a href="<?php the_permalink() ?>" class="blog-img">
-					<?php echo get_the_post_thumbnail( $id, array( 210, 210) ); ?>
-				</a>
-			</div>
-			<?php
-		} ?>
-		<div class="excerpt-wraper col-md-9">
-            <header class="article-header">
-                <h4>
-                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-                    &nbsp;
-                    <?php if ( is_user_logged_in() ) {
-                        echo '<a href="' . get_edit_post_link( $id, $context ) . '">[<i class="fa fa-pencil-square-o"></i> edit]</a>';
-                    }
-                    ?>
-                </h4>
-            </header>
-
-			<?php the_excerpt(); ?>
-
-            <footer class="article-footer">
-                <p class="byline vcard">
-                    <?php
-                    printf( __( '<small><i>by <strong>%3$s</strong> on <strong><time class="updated" datetime="%1$s">%2$s</time></strong> <span class="comments-count" >in categories: <strong>%4$s</strong></i></small>', 'bonestheme' ),
-                        get_the_time( 'Y-m-j' ),
-                        get_the_time( __( 'F j, Y', 'bonestheme' ) ),
-                        bones_get_the_author_posts_link(),
-                        implode(", ", wp_get_post_categories( $id, array('fields' => 'names') )),
-                        get_permalink( $id )
-                    );?>
-                </p>
-            </footer>
+                <div class="card-text small">
+                    <p class="byline vcard text-muted minicaps text-left">
+                        <?php
+                        printf( __( '<span>%3$s</span> | <time class="updated" datetime="%1$s">%2$s</time>', 'bonestheme' ),
+                            get_the_time( 'Y-m-j' ),
+                            get_the_time( __( 'F j, Y', 'bonestheme' ) ),
+                            bones_get_the_author_posts_link(),
+                            get_permalink( $id )
+                        );?>
+                    </p>
+        			<?php the_excerpt(); ?>
+                </div>
+            </div>
         </div>
-	</section>
-
-
-    <hr/>
 
 	<?php // comments_template(); // uncomment if you want to use them ?>
+    </article><!-- #post-## -->
 
-</article><!-- #post-## -->
+</div>

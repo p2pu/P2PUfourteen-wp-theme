@@ -49,21 +49,37 @@
 }
 
 #main{
-  .entry-content{
-    padding: 20px 0;
+  .post-preview {
 
-    img{
+    h3 {
+      font-family: $font-family-sans-serif;
+
+      a {
+        color: $gray-darker;
+      }
+    }
+
+    img {
       max-width: 100%;
       height: auto;
+      width: 100%;
+      object-fit: cover;
+      max-height: 200px;
     }
+  }
 
-    .blog-img{
-      display: block;
-      padding-top: 10px;
+  .featured-post {
+    .img-fluid {
+      height: 100%;
+
+      img {
+        height: 100%;
+        max-height: 100%;
+      }
     }
-
   }
 }
+
 
 .pagination{
 
