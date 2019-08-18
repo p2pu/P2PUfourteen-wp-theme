@@ -14,7 +14,7 @@
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix card single-post'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-                        <div class="card-body">
+                        <div class="card-body p-md-5">
 
                             <header class="article-header mb-4">
 

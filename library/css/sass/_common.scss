@@ -57,10 +57,6 @@ blockquote {
 article.single-post {
   margin-top: 25vh;
 
-  .card-body {
-    padding: 2.25em;
-  }
-
   .entry-content {
     h1, h2, h3 {
       margin-top: 1.25em;
@@ -207,6 +203,14 @@ article.single-post {
   a {
     color: inherit;
   }
+}
+
+.wp-block-embed-youtube {
+  text-align: center;
+}
+
+iframe {
+  max-width: 100%;
 }
 
 
