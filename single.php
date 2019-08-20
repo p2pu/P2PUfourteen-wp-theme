@@ -1,47 +1,51 @@
 <?php get_header(); ?>
 
-    <main id="inner-content" class="container clearfix">
+    <main id="inner-content" class="bg-light clearfix pos-relative">
 
-        <?php get_template_part('heading','fixed'); ?>
-
-
-        <div id="main" class="col-12 border-0" role="main">
+        <div id="main" class="container" role="main">
 
             <div id="content">
 
-                <a href="<?php bloginfo('url'); ?>"><i class="fas fa-sync"></i> Show all posts</a>
-
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="header-image">
+                        <?php the_post_thumbnail('bones-thumb-1440'); ?>
+                    </div>
 
-                        <header class="article-header">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix card single-post'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-                            <h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-                            <p class="byline vcard">
-                                <?php
-                                printf( __( '<small><i>by <strong>%3$s</strong> on <strong><time class="updated" datetime="%1$s">%2$s</time></strong> <span class="comments-count" >in categories: <strong>%4$s</strong></i></small>', 'bonestheme' ),
-                                    get_the_time( 'Y-m-j' ),
-                                    get_the_time( __( 'F j, Y', 'bonestheme' ) ),
-                                    bones_get_the_author_posts_link(),
-                                    implode(", ", wp_get_post_categories( $id, array('fields' => 'names') )),
-                                    get_permalink( $id )
-                                );?>
-                            </p>
+                        <div class="card-body p-md-5">
 
-                        </header>
+                            <header class="article-header mb-4">
 
-                        <section class="entry-content clearfix" itemprop="articleBody">
-                            <?php the_content(); ?>
-                        </section>
+                                <h1 class="entry-title single-title card-title" itemprop="headline"><?php the_title(); ?></h1>
+                                <p class="byline vcard minicaps text-left">
+                                    <?php
+                                    printf( __( '<span>%3$s</span> | <time class="updated" datetime="%1$s">%2$s</time>', 'bonestheme' ),
+                                        get_the_time( 'Y-m-j' ),
+                                        get_the_time( __( 'F j, Y', 'bonestheme' ) ),
+                                        bones_get_the_author_posts_link(),
+                                        get_permalink( $id )
+                                    );?>
+                                </p>
 
-                        <hr/>
+                            </header>
 
-                        <footer class="article-footer">
-                            <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+                            <hr>
 
-                        </footer>
+                            <section class="entry-content clearfix my-4" itemprop="articleBody">
+                                <div class="card-text">
+                                    <?php the_content(); ?>
+                                </div>
+                            </section>
 
+                            <hr>
+
+                            <footer class="article-footer">
+                                <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> <span class="badge badge-primary p-2 mx-1">', '</span><span class="badge badge-primary p-2 mx-1"> ', '</span></p>' ); ?>
+
+                            </footer>
+                        </div>
                     </article>
 
                 <?php endwhile; ?>
@@ -64,11 +68,10 @@
 
                 <br/>
                 <p>
-                    <a href="<?php bloginfo('url'); ?>"><i class="fas fa-sync"></i> Show all posts</a>
+                    <a href="<?php bloginfo('url'); ?>"><i class="fas fa-arrow-left mr-3"></i>Back to Blog home</a>
                 </p>
 
             </div>
-
         </div>
 
     </main>

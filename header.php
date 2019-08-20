@@ -42,7 +42,7 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('bg-light'); ?>>
 
 <nav class="nav-collapsed <?php if ( is_user_logged_in() ) { echo 'logged-in'; } ?>" role="navigation" id="home">
 
@@ -84,7 +84,7 @@
               <a href="https://www.p2pu.org/en/learning-circles/">
                 <div class="menu-item">
                   <span class="bullet"></span>
-                  <span class="text">Learning Circles</span>
+                  <span class="text">Join a learning circle</span>
                 </div>
               </a>
 
@@ -99,35 +99,18 @@
                   <span class="text">Facilitate</span>
                 </div>
               </a>
+            </div>
+          </div>
 
-              <a href="https://www.p2pu.org/en/courses/" class="dark">
-                <div class="menu-item submenu">
+
+          <div class="menu-section top-level">
+            <div class="nav-container">
+              <a href="https://www.p2pu.org/en/organize/">
+                <div class="menu-item">
                   <span class="bullet"></span>
-                  <span class="text">Courses</span>
+                  <span class="text">Organize</span>
                 </div>
               </a>
-
-              <a href="https://learningcircles.p2pu.org/en/facilitator/" class="dark">
-                <div class="menu-item submenu">
-                  <span class="bullet"></span>
-                  <span class="text">Dashboard</span>
-                </div>
-              </a>
-
-              <a href="https://learningcircles.p2pu.org/en/studygroup/create/" class="dark">
-                <div class="menu-item submenu">
-                  <span class="bullet"></span>
-                  <span class="text">Create a learning circle</span>
-                </div>
-              </a>
-
-              <a href="https://community.p2pu.org/tags/faq/" class="dark">
-                <div class="menu-item submenu">
-                  <span class="bullet"></span>
-                  <span class="text">FAQ</span>
-                </div>
-              </a>
-
             </div>
           </div>
 
@@ -160,7 +143,7 @@
               <a href="https://www.p2pu.org/en/about/">
                 <div class="menu-item">
                   <span class="bullet"></span>
-                  <span class="text">About P2PU</span>
+                  <span class="text">About</span>
                 </div>
               </a>
 
@@ -174,7 +157,7 @@
               <a href="https://www.p2pu.org/en/jobs/" class="dark">
                 <div class="menu-item submenu">
                   <span class="bullet"></span>
-                  <span class="text">Jobs</span>
+                  <span class="text">Job opportunities</span>
                 </div>
               </a>
 
