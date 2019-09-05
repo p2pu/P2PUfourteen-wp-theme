@@ -34,6 +34,7 @@
         content="<?php echo get_template_directory_uri(); ?>/favicon.png">
 
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<?php wp_head(); ?>
 
