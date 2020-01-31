@@ -117,6 +117,18 @@
 
           <div class="menu-section top-level">
             <div class="nav-container">
+              <a href="https://www.p2pu.org/en/courses/">
+                <div class="menu-item">
+                  <span class="bullet"></span>
+                  <span class="text">Courses</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+
+          <div class="menu-section top-level">
+            <div class="nav-container">
               <a href="https://www.p2pu.org/en/events/">
                 <div class="menu-item">
                   <span class="bullet"></span>
@@ -167,6 +179,18 @@
                   <span class="text">About P2PU
                     
                   </span>
+                </div>
+              </a>
+              
+            </div>
+          </div>
+
+          <div class="menu-section top-level">
+            <div class="nav-container">
+              <a href="https://www.p2pu.org/en/jobs/">
+                <div class="menu-item">
+                  <span class="bullet"></span>
+                  <span class="text">Job opportunities</span>
                 </div>
               </a>
               
