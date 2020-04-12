@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<main id="inner-content" class="container clearfix">
+	<main id="inner-content" class="container clearfix mb-4">
 
         <?php get_template_part('heading', 'top'); ?>
 
