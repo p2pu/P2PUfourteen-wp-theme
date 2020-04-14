@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <main id="inner-content" class="bg-light clearfix pos-relative">
+    <main id="inner-content" class="bg-light clearfix pos-relative mb-4">
 
         <div id="main" class="container" role="main">
 
