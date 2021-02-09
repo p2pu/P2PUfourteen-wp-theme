@@ -129,31 +129,33 @@
 
           <div class="menu-section top-level">
             <div class="nav-container">
-              <a href="https://www.p2pu.org/en/events/">
+              <a href="https://community.p2pu.org/c/community-events/" target="_blank" rel="noopener noreferrer">
                 <div class="menu-item">
                   <span class="bullet"></span>
                   <span class="text">Events
-                    
+
+                      <i class="material-icons ml-1" style="font-size: inherit; line-height: inherit; vertical-align: top;">open_in_new</i>
+
                   </span>
                 </div>
               </a>
-              
+
             </div>
           </div>
 
           <div class="menu-section top-level">
             <div class="nav-container">
-              <a href="https://community.p2pu.org/">
+              <a href="https://community.p2pu.org/" target="_blank" rel="noopener noreferrer">
                 <div class="menu-item">
                   <span class="bullet"></span>
                   <span class="text">Community
-                    
+
                       <i class="material-icons ml-1" style="font-size: inherit; line-height: inherit; vertical-align: top;">open_in_new</i>
-                    
+
                   </span>
                 </div>
               </a>
-              
+
             </div>
           </div>
 
@@ -163,25 +165,25 @@
                 <div class="menu-item">
                   <span class="bullet"></span>
                   <span class="text">Hire us
-                    
+
                   </span>
                 </div>
               </a>
-              
+
             </div>
           </div>
-        
+
           <div class="menu-section top-level">
             <div class="nav-container">
               <a href="https://www.p2pu.org/en/about/">
                 <div class="menu-item">
                   <span class="bullet"></span>
                   <span class="text">About P2PU
-                    
+
                   </span>
                 </div>
               </a>
-              
+
             </div>
           </div>
 
@@ -193,56 +195,56 @@
                   <span class="text">Job opportunities</span>
                 </div>
               </a>
-              
+
             </div>
           </div>
-        
+
           <div class="menu-section top-level">
             <div class="nav-container">
-              <a href="http://info.p2pu.org/">
+              <a href="http://info.p2pu.org/" target="_blank" rel="noopener noreferrer">
                 <div class="menu-item">
                   <span class="bullet"></span>
                   <span class="text">Blog
-                    
+
                       <i class="material-icons ml-1" style="font-size: inherit; line-height: inherit; vertical-align: top;">open_in_new</i>
-                    
+
                   </span>
                 </div>
               </a>
-              
+
             </div>
           </div>
-        
+
           <div class="menu-section top-level">
             <div class="nav-container">
-              <a href="https://shop.spreadshirt.com/p2pu/">
+              <a href="https://shop.spreadshirt.com/p2pu/" target="_blank" rel="noopener noreferrer">
                 <div class="menu-item">
                   <span class="bullet"></span>
                   <span class="text">Shop
-                    
+
                       <i class="material-icons ml-1" style="font-size: inherit; line-height: inherit; vertical-align: top;">open_in_new</i>
-                    
+
                   </span>
                 </div>
               </a>
-              
+
             </div>
           </div>
-        
+
           <div class="menu-section top-level">
             <div class="nav-container">
               <a href="https://www.p2pu.org/en/donate/">
                 <div class="menu-item">
                   <span class="bullet"></span>
                   <span class="text">Donate
-                    
+
                   </span>
                 </div>
               </a>
-              
+
             </div>
           </div>
-        
+
           <div class="menu-section top-level">
             <div class="nav-container">
               <a href="https://www.p2pu.org/en/connect/">
@@ -251,7 +253,7 @@
                   <span class="text">Contact</span>
                 </div>
               </a>
-              
+
             </div>
           </div>
 
