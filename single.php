@@ -8,9 +8,9 @@
 
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                    <div class="header-image">
+                    <!--div class="header-image">
                         <?php the_post_thumbnail('bones-thumb-1440'); ?>
-                    </div>
+                    </div-->
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix card single-post'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
